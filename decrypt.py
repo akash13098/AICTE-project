@@ -16,7 +16,7 @@ except FileNotFoundError:
     print("Error: Password file not found!")
     exit()
 
-# Ask user for the password
+
 password = input("Enter the passcode for decryption: ")
 
 # Validate password
@@ -24,7 +24,7 @@ if password != correct_password:
     print("Wrong password! Decryption failed.")
     exit()
 
-# Number-to-character mapping
+
 c = {i: chr(i) for i in range(255)}
 
 # Extract message from image
